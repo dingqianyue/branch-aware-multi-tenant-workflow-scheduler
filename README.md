@@ -571,3 +571,6 @@ redis-cli ping  # Should return PONG
 brew services start redis  # Mac
 sudo service redis start   # Linux
 ```
+
+## Demo Screenshot
+![Screenshot showing the feature](screenshot.png)
