@@ -573,4 +573,4 @@ sudo service redis start   # Linux
 ```
 
 ## Demo Screenshot
-![Screenshot showing the feature](screenshot.png)
+![Screenshot showing the feature](Screenshot.png)
