@@ -157,8 +157,7 @@ python -m pip install --upgrade pip --quiet 2>/dev/null || true
 # Check if packages are installed
 if ! python -c "import fastapi" &> /dev/null; then
     print_info "Installing backend packages..."
-    # Install numpy compatible with opencv-python-headless (requires numpy>=2)
-    pip install -q "numpy>=2.0,<3.0"
+    pip install -q "numpy==2.0.0"
     pip install -q fastapi uvicorn celery redis openslide-python \
                 networkx opencv-python-headless scikit-image pillow \
                 websockets python-multipart aiofiles requests
