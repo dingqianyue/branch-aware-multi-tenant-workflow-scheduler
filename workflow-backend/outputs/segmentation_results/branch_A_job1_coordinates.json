@@ -1,0 +1,369 @@
+{
+  "job_id": "branch_A_job1",
+  "timestamp": "2025-11-26T03:39:52.322749",
+  "image_path": "uploads/qianyue/CMU-1.svs",
+  "tile_size": 1024,
+  "overlap": 128,
+  "tiles": [
+    {
+      "tile_index": 0,
+      "coordinates": {
+        "x": 28672,
+        "y": 896,
+        "width": 1024,
+        "height": 1024,
+        "center_x": 29184,
+        "center_y": 1408
+      },
+      "tissue_ratio": 0.3269628099173554,
+      "metrics": {
+        "num_cells": 412,
+        "avg_cell_size": 535.6577669902913,
+        "has_tissue": true
+      },
+      "processed": true
+    },
+    {
+      "tile_index": 1,
+      "coordinates": {
+        "x": 29568,
+        "y": 896,
+        "width": 1024,
+        "height": 1024,
+        "center_x": 30080,
+        "center_y": 1408
+      },
+      "tissue_ratio": 0.6683884297520661,
+      "metrics": {
+        "num_cells": 389,
+        "avg_cell_size": 1649.2699228791773,
+        "has_tissue": true
+      },
+      "processed": true
+    },
+    {
+      "tile_index": 2,
+      "coordinates": {
+        "x": 27776,
+        "y": 1792,
+        "width": 1024,
+        "height": 1024,
+        "center_x": 28288,
+        "center_y": 2304
+      },
+      "tissue_ratio": 0.2618801652892562,
+      "metrics": {
+        "num_cells": 371,
+        "avg_cell_size": 569.1320754716982,
+        "has_tissue": true
+      },
+      "processed": true
+    },
+    {
+      "tile_index": 3,
+      "coordinates": {
+        "x": 28672,
+        "y": 1792,
+        "width": 1024,
+        "height": 1024,
+        "center_x": 29184,
+        "center_y": 2304
+      },
+      "tissue_ratio": 0.9375,
+      "metrics": {
+        "num_cells": 1135,
+        "avg_cell_size": 568.5418502202643,
+        "has_tissue": true
+      },
+      "processed": true
+    },
+    {
+      "tile_index": 4,
+      "coordinates": {
+        "x": 29568,
+        "y": 1792,
+        "width": 1024,
+        "height": 1024,
+        "center_x": 30080,
+        "center_y": 2304
+      },
+      "tissue_ratio": 1.0,
+      "metrics": {
+        "num_cells": 1513,
+        "avg_cell_size": 530.8155981493721,
+        "has_tissue": true
+      },
+      "processed": true
+    },
+    {
+      "tile_index": 5,
+      "coordinates": {
+        "x": 30464,
+        "y": 1792,
+        "width": 1024,
+        "height": 1024,
+        "center_x": 30976,
+        "center_y": 2304
+      },
+      "tissue_ratio": 0.49586776859504134,
+      "metrics": {
+        "num_cells": 775,
+        "avg_cell_size": 444.4283870967742,
+        "has_tissue": true
+      },
+      "processed": true
+    },
+    {
+      "tile_index": 6,
+      "coordinates": {
+        "x": 35840,
+        "y": 1792,
+        "width": 1024,
+        "height": 1024,
+        "center_x": 36352,
+        "center_y": 2304
+      },
+      "tissue_ratio": 0.2949380165289256,
+      "metrics": {
+        "num_cells": 376,
+        "avg_cell_size": 556.8803191489362,
+        "has_tissue": true
+      },
+      "processed": true
+    },
+    {
+      "tile_index": 7,
+      "coordinates": {
+        "x": 36736,
+        "y": 1792,
+        "width": 1024,
+        "height": 1024,
+        "center_x": 37248,
+        "center_y": 2304
+      },
+      "tissue_ratio": 0.6740702479338843,
+      "metrics": {
+        "num_cells": 1091,
+        "avg_cell_size": 478.66636113657194,
+        "has_tissue": true
+      },
+      "processed": true
+    },
+    {
+      "tile_index": 8,
+      "coordinates": {
+        "x": 37632,
+        "y": 1792,
+        "width": 1024,
+        "height": 1024,
+        "center_x": 38144,
+        "center_y": 2304
+      },
+      "tissue_ratio": 0.24018595041322313,
+      "metrics": {
+        "num_cells": 425,
+        "avg_cell_size": 376.00235294117647,
+        "has_tissue": true
+      },
+      "processed": true
+    },
+    {
+      "tile_index": 9,
+      "coordinates": {
+        "x": 26880,
+        "y": 2688,
+        "width": 1024,
+        "height": 1024,
+        "center_x": 27392,
+        "center_y": 3200
+      },
+      "tissue_ratio": 0.10898760330578512,
+      "metrics": {
+        "num_cells": 195,
+        "avg_cell_size": 520.5384615384615,
+        "has_tissue": true
+      },
+      "processed": true
+    },
+    {
+      "tile_index": 10,
+      "coordinates": {
+        "x": 27776,
+        "y": 2688,
+        "width": 1024,
+        "height": 1024,
+        "center_x": 28288,
+        "center_y": 3200
+      },
+      "tissue_ratio": 0.9168388429752066,
+      "metrics": {
+        "num_cells": 1096,
+        "avg_cell_size": 559.8914233576643,
+        "has_tissue": true
+      },
+      "processed": true
+    },
+    {
+      "tile_index": 11,
+      "coordinates": {
+        "x": 28672,
+        "y": 2688,
+        "width": 1024,
+        "height": 1024,
+        "center_x": 29184,
+        "center_y": 3200
+      },
+      "tissue_ratio": 1.0,
+      "metrics": {
+        "num_cells": 1004,
+        "avg_cell_size": 611.4223107569721,
+        "has_tissue": true
+      },
+      "processed": true
+    },
+    {
+      "tile_index": 12,
+      "coordinates": {
+        "x": 29568,
+        "y": 2688,
+        "width": 1024,
+        "height": 1024,
+        "center_x": 30080,
+        "center_y": 3200
+      },
+      "tissue_ratio": 1.0,
+      "metrics": {
+        "num_cells": 1386,
+        "avg_cell_size": 548.8860028860029,
+        "has_tissue": true
+      },
+      "processed": true
+    },
+    {
+      "tile_index": 13,
+      "coordinates": {
+        "x": 30464,
+        "y": 2688,
+        "width": 1024,
+        "height": 1024,
+        "center_x": 30976,
+        "center_y": 3200
+      },
+      "tissue_ratio": 0.9617768595041323,
+      "metrics": {
+        "num_cells": 2229,
+        "avg_cell_size": 266.13100044863165,
+        "has_tissue": true
+      },
+      "processed": true
+    },
+    {
+      "tile_index": 14,
+      "coordinates": {
+        "x": 31360,
+        "y": 2688,
+        "width": 1024,
+        "height": 1024,
+        "center_x": 31872,
+        "center_y": 3200
+      },
+      "tissue_ratio": 0.15960743801652894,
+      "metrics": {
+        "num_cells": 152,
+        "avg_cell_size": 492.2171052631579,
+        "has_tissue": true
+      },
+      "processed": true
+    },
+    {
+      "tile_index": 15,
+      "coordinates": {
+        "x": 35840,
+        "y": 2688,
+        "width": 1024,
+        "height": 1024,
+        "center_x": 36352,
+        "center_y": 3200
+      },
+      "tissue_ratio": 0.8708677685950413,
+      "metrics": {
+        "num_cells": 998,
+        "avg_cell_size": 592.8356713426854,
+        "has_tissue": true
+      },
+      "processed": true
+    },
+    {
+      "tile_index": 16,
+      "coordinates": {
+        "x": 36736,
+        "y": 2688,
+        "width": 1024,
+        "height": 1024,
+        "center_x": 37248,
+        "center_y": 3200
+      },
+      "tissue_ratio": 1.0,
+      "metrics": {
+        "num_cells": 1720,
+        "avg_cell_size": 498.6744186046512,
+        "has_tissue": true
+      },
+      "processed": true
+    },
+    {
+      "tile_index": 17,
+      "coordinates": {
+        "x": 37632,
+        "y": 2688,
+        "width": 1024,
+        "height": 1024,
+        "center_x": 38144,
+        "center_y": 3200
+      },
+      "tissue_ratio": 0.9617768595041323,
+      "metrics": {
+        "num_cells": 1771,
+        "avg_cell_size": 435.7989836250706,
+        "has_tissue": true
+      },
+      "processed": true
+    },
+    {
+      "tile_index": 18,
+      "coordinates": {
+        "x": 38528,
+        "y": 2688,
+        "width": 1024,
+        "height": 1024,
+        "center_x": 39040,
+        "center_y": 3200
+      },
+      "tissue_ratio": 0.4318181818181818,
+      "metrics": {
+        "num_cells": 582,
+        "avg_cell_size": 486.6082474226804,
+        "has_tissue": true
+      },
+      "processed": true
+    },
+    {
+      "tile_index": 19,
+      "coordinates": {
+        "x": 26880,
+        "y": 3584,
+        "width": 1024,
+        "height": 1024,
+        "center_x": 27392,
+        "center_y": 4096
+      },
+      "tissue_ratio": 0.45919421487603307,
+      "metrics": {
+        "num_cells": 654,
+        "avg_cell_size": 558.4204892966361,
+        "has_tissue": true
+      },
+      "processed": true
+    }
+  ]
+}
