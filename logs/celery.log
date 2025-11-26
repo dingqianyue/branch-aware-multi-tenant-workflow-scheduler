@@ -1,0 +1,91 @@
+ 
+ -------------- celery@Qianyues-MacBook-Pro.local v5.5.3 (immunity)
+--- ***** ----- 
+-- ******* ---- macOS-26.1-arm64-arm-64bit 2025-11-25 22:37:04
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         workflow_scheduler:0x10778a010
+- ** ---------- .> transport:   redis://localhost:6379/0
+- ** ---------- .> results:     redis://localhost:6379/0
+- *** --- * --- .> concurrency: 1 (solo)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . app.workers.segment_wsi
+  . mock_segment_wsi
+  . segment_wsi
+  . test_segmentation
+
+[2025-11-25 22:37:04,277: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2025-11-25 22:37:04,279: INFO/MainProcess] mingle: searching for neighbors
+[2025-11-25 22:37:05,282: INFO/MainProcess] mingle: all alone
+[2025-11-25 22:37:05,288: INFO/MainProcess] celery@Qianyues-MacBook-Pro.local ready.
+[2025-11-25 22:37:47,540: INFO/MainProcess] Task app.workers.segment_wsi[be52b14d-8f4b-4588-a3e1-7bbec87b3eaf] received
+[2025-11-25 22:37:47,544: INFO/MainProcess] [Celery Task] Starting segmentation job branch_A_job1
+[2025-11-25 22:37:47,545: INFO/MainProcess] Processing WSI job branch_A_job1: uploads/qianyue/CMU-1.svs
+[2025-11-25 22:37:47,545: INFO/MainProcess] Detecting tissue in: /Users/qianyueding/branch-aware-multi-tenant-workflow-scheduler/workflow-backend/uploads/qianyue/CMU-1.svs
+[2025-11-25 22:37:47,727: INFO/MainProcess] Thumbnail size: (2000, 1431), Full size: (46000, 32914)
+[2025-11-25 22:37:47,796: INFO/MainProcess] Tissue coverage: 18.8%
+[2025-11-25 22:37:47,803: INFO/MainProcess] Tile generation complete:
+[2025-11-25 22:37:47,803: INFO/MainProcess]   Total possible: 1924
+[2025-11-25 22:37:47,803: INFO/MainProcess]   With tissue: 433
+[2025-11-25 22:37:47,803: INFO/MainProcess]   Skipped: 1491 (77.5%)
+[2025-11-25 22:37:47,803: INFO/MainProcess]   SPEEDUP: 4.44x
+[2025-11-25 22:37:47,803: INFO/MainProcess] Generated 433 tiles for processing
+[2025-11-25 22:37:48,337: WARNING/MainProcess] Model fluorescence_nuclei_and_cells version 0.1.1 already downloaded in /Users/qianyueding/branch-aware-multi-tenant-workflow-scheduler/workflow-backend/venv/lib/python3.11/site-packages/instanseg/utils/../bioimageio_models/, loading
+[2025-11-25 22:37:48,637: INFO/MainProcess] InstanSeg model loaded successfully
+[2025-11-25 22:37:48,854: WARNING/MainProcess] /Users/qianyueding/branch-aware-multi-tenant-workflow-scheduler/workflow-backend/venv/lib/python3.11/site-packages/torch/amp/autocast_mode.py:270: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn(
+
+[2025-11-25 22:37:55,271: WARNING/MainProcess] /Users/qianyueding/branch-aware-multi-tenant-workflow-scheduler/workflow-backend/venv/lib/python3.11/site-packages/torch/nn/modules/module.py:1786: UserWarning: Sparse CSR tensor support is in beta state. If you miss a functionality in the sparse tensor support, please submit a feature request to https://github.com/pytorch/pytorch/issues. (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/aten/src/ATen/SparseCsrTensorImpl.cpp:55.)
+  return forward_call(*args, **kwargs)
+
+[2025-11-25 22:38:01,515: WARNING/MainProcess] InstanSeg failed on tile (1024, 1024, 3), using mock. Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/instanseg/utils/pytorch_utils.py", line 105, in forward
+    _44 = torch.index(_42, _43)
+    _45 = annotate(List[Optional[Tensor]], [mask0])
+    _46 = torch.index_put_(x2, _45, _44)
+          ~~~~~~~~~~~~~~~~ <--- HERE
+  return _39(x2, original_dim, )
+def torch_fastremap(x: Tensor) -> Tensor:
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/thibaut_goldsborough/Documents/Projects/Project_InstanSeg/InstanSeg_Public/instanseg_thibaut/instanseg/utils/pytorch_utils.py", line 559, in forward
+
+    for _ in range(num_iterations):
+        x[mask] = torch.nn.functional.max_pool2d(x.float(), kernel_size=3, stride=1, padding=1)[mask]
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    return _to_ndim(x, original_dim)
+RuntimeError: shape mismatch: value tensor of shape [4288512] cannot be broadcast to indexing result of shape [7524352]
+
+[2025-11-25 22:38:20,788: INFO/MainProcess] Progress: 5/20 tiles processed
+[2025-11-25 22:38:48,683: INFO/MainProcess] Progress: 10/20 tiles processed
+[2025-11-25 22:39:15,155: WARNING/MainProcess] InstanSeg failed on tile (1024, 1024, 3), using mock. Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/instanseg/utils/pytorch_utils.py", line 105, in forward
+    _44 = torch.index(_42, _43)
+    _45 = annotate(List[Optional[Tensor]], [mask0])
+    _46 = torch.index_put_(x2, _45, _44)
+          ~~~~~~~~~~~~~~~~ <--- HERE
+  return _39(x2, original_dim, )
+def torch_fastremap(x: Tensor) -> Tensor:
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/thibaut_goldsborough/Documents/Projects/Project_InstanSeg/InstanSeg_Public/instanseg_thibaut/instanseg/utils/pytorch_utils.py", line 559, in forward
+
+    for _ in range(num_iterations):
+        x[mask] = torch.nn.functional.max_pool2d(x.float(), kernel_size=3, stride=1, padding=1)[mask]
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    return _to_ndim(x, original_dim)
+RuntimeError: shape mismatch: value tensor of shape [4292608] cannot be broadcast to indexing result of shape [7532544]
+
+[2025-11-25 22:39:21,375: INFO/MainProcess] Progress: 15/20 tiles processed
+[2025-11-25 22:39:52,310: INFO/MainProcess] Progress: 20/20 tiles processed
+[2025-11-25 22:39:52,331: INFO/MainProcess] Saved coordinate map to /Users/qianyueding/branch-aware-multi-tenant-workflow-scheduler/workflow-backend/outputs/segmentation_results/branch_A_job1_coordinates.json
+[2025-11-25 22:39:52,355: INFO/MainProcess] [Celery Task] Job branch_A_job1 completed with status: SUCCESS
+[2025-11-25 22:39:52,403: INFO/MainProcess] Task app.workers.segment_wsi[be52b14d-8f4b-4588-a3e1-7bbec87b3eaf] succeeded in 124.84479145891964s: {'job_id': 'branch_A_job1', 'status': 'SUCCESS', 'image_path': '/Users/qianyueding/branch-aware-multi-tenant-workflow-scheduler/workflow-backend/uploads/qianyue/CMU-1.svs', 'tiles_processed': 20, 'statistics': {'total_tiles': 20, 'processed_tiles': 20, 'failed_tiles': 0, 'total_cells': 18274, 'avg_cells_per_tile': 913.7, 'tissue_coverage': 0.6385330578512397, 'spatial_bounds': {'min_x': 27392, 'max_x': 39040, 'min_y': 1408, 'max_y': 4096}}, 'coordinate_map_path': '/Users/qianyueding/branch-aware-multi-tenant-workflow-scheduler/workflow-backend/outputs/segmentation_results/branch_A_job1_coordinates.json', 'processing_time': '2025-11-26T03:39:52.331721'}

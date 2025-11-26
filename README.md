@@ -159,6 +159,9 @@ The easiest way to set up and run the entire system:
 git clone https://github.com/dingqianyue/branch-aware-multi-tenant-workflow-scheduler.git
 cd branch-aware-multi-tenant-workflow-scheduler
 
+# Change mode
+chmod +x *.sh
+
 # Run the start script (handles everything automatically)
 ./start.sh
 ```
